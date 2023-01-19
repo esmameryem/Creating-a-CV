@@ -1,0 +1,255 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESPONSIVE</title>
+</head>
+
+<body>
+     <form method="get">
+            <h2 style="text-align: center; border: 1px solid #000; padding: 20px;height: 80; width: 1600px;">CV HAZIRLAMA ARACI</h2>
+            <div style="border: 3px solid #000; display: flex; justify-content: flex-start; width: 1626px;">
+                <div class="left-side" style="background-color: rgb(175, 175, 175); width:350px; padding-left: 10px;">
+                    <p
+                        style="padding: 15px;margin: 0px ;text-align: center; border-bottom: 3px solid rgb(12, 11, 11); font-size: 25px;">
+                        <b>Metin İçerikleri</b>
+                    </p>
+                <p style="text-decoration: underline;"><b>Isim Kutusu</b></p>
+                <label for="fullname" style="padding-right: 30px;">Ad Soyad: </label>
+                <input type="text" name="fullname" id="fullname" onkeyup="changeNameHandler()"><br>
+                <label for="title" style="padding-right: 51px;">Ünvan: </label>
+                <input type="text" name="title" id="title" onkeyup="changeUnvanHandler()">
+                <br>
+                <p style="text-decoration: underline;"><b>İletişim Bilgileri</b></p>
+                <label for="phoneNumber" style="padding-right: 50px;" >Telefon: </label>
+                <input type="text" name="phoneNumber" id="phoneNumber" onkeyup="changePhoneHandler()"><br>
+                <label for="mail" style="padding-right: 68px;">Mail: </label>
+                <input type="text" name="mail" id="mail" onkeyup="changeMailHandler()"><br>
+                <label for="web" style="padding-right: 70px;">Web: </label>
+                <input type="text" name="web" style="margin-bottom: 2px;" id="web" onkeyup="changeWebHandler()"><br>
+                <div style="display: flex; justify-content: space-between;">
+                    <label for="adress">Adres: </label>
+                    <textarea name="adress" rows="4" cols="20" id="adress" onkeyup="changeAdressHandler()"></textarea><br>
+                </div>
+                <p style="text-decoration: underline;"><b>Eğitim Bilgileri</b></p>
+                <br>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 2px;">
+                    <label for="explain">Açıklama: </label>
+                    <textarea name="explain" rows="4" cols="20" id="explain" onkeyup="changeEgitimHandler()"></textarea><br>
+                </div>
+                <label for="schollnumber" style="padding-right: 35px; margin-bottom: 10px;">Okul Sayısı: </label>
+                <select id="schollnumber" name="carlist">
+                    <option value="seciniz">seçiniz</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select><br><br>
+                <p style="text-decoration: underline;"><b>Yetenekler</b></p>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+                    <label for="ytnkExplain">Açıklama: </label>
+                    <textarea name="ytnkExplain" rows="4" cols="20" style="margin-left: 19px;" onkeyup="changeYtnkHandler()" id="ytnkExplain"></textarea><br>
+                </div>
+                <label for="number" style="padding-right: 25px;">Yetenek Sayısı: </label>
+                <select id="number" name="carlist">
+                    <option value="seciniz">seçiniz</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select><br><br>
+                <p style="text-decoration: underline;"><b>Hakkımda</b></p>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+                    <label for="aboutExplain">Açıklama: </label>
+                    <textarea name="aboutExplain" rows="4" cols="20" style="margin-left: 19px;" id="aboutExplain" onkeyup="changeAboutHandler()"></textarea><br>
+                </div>
+                <p style="text-decoration: underline;"><b>İş Deneyimi</b></p>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+                    <label for="wrkExperience">Açıklama: </label>
+                    <textarea name="wrkExperience" rows="4" cols="20" style="margin-left: 19px;" id="wrkExperience" onkeyup="changeWrkHandler()"></textarea><br>
+                </div>
+            </div>
+            <div class="mid-side" style="background-color: rgb(209, 209, 209); width:350px; padding-left: 5px;">
+                <p
+                    style="padding: 15px;margin: 0px ;text-align: center; border-bottom: 3px solid rgb(12, 13, 13); font-size: 25px;"><b>Görünüş</b></p>
+                <p style="text-decoration: underline;"><b>Renkler</b></p>
+                <label for="favcolor1" style="padding-right: 66px;">Arkaplan Rengi: </label>
+                <input type="color" id="favcolor" name="favcolor1" value="#ff0000"><br>
+                <label for="favcolor2" style="padding-right: 60px;">Sol Kolon Rengi: </label>
+                <input type="color" id="favcolor" name="favcolor2" value="#ff0000"><br>
+                <label for="favcolor3" style="padding-right: 47px;">İsim Kutusu Rengi: </label>
+                <input type="color" id="favcolor" name="favcolor3" value="#ff0000"><br>
+                <label for="favcolor4" style="padding-right: 19px;">İsim Kutusu Yan Rengi: </label>
+                <input type="color" id="favcolor" name="favcolor4" value="#ff0000"><br>
+                <p style="text-decoration: underline;"><b>Yazı Tipi</b></p>
+                <label for="font" style="padding-right: 119px;">Yazı Tipi: </label>
+                <select id="font" name="carlist">
+                    <option value="seciniz">seçiniz</option>
+                    <option value="0">Georgia</option>
+                    <option value="1">Gill Sans</option>
+                    <option value="2">Sans-Serif</option>
+                    <option value="3">Serif</option>
+                    <option value="4">Cursive</option>
+                    <option value="5">System-Ui</option>
+                </select><br><br>
+                <p style="text-decoration: underline;"><b>Fotoğraf</b></p>
+                <label for="çerceve" style="padding-right: 32px;">Fotoğraf Çerçeve Şekli: </label>
+                <select id="çerceve" name="carlist">
+                    <option value="seciniz">Seçiniz</option>
+                    <option value="0">Köşeli</option>
+                    <option value="1">Oval</option>
+                    <option value="2">Yuvarlak</option>
+                </select>
+                <p style="text-decoration: underline;"><b>Başlık Altı Çizgileri</b></p>
+                <label for="favcolor-cizgi" style="padding-right: 66px;">Çizgi Rengi: </label>
+                <input type="color" id="favcolor" name="favcolor-cizgi" value="#ff0000"><br><br>
+                <label for="çerceve" style="padding-right: 72px;">Çizgi Şekli: </label>
+                <select id="çerceve" name="carlist">
+                    <option value="seciniz">Seçiniz</option>
+                    <option value="0">Köşeli</option>
+                    <option value="1">Oval</option>
+                    <option value="2">Yuvarlak</option>
+                </select>
+            </div>
+            <div class="right-side-container"
+                style="background-color: rgb(221, 36, 36); height: 1000px;width:950px; display: flex; justify-content: flex-start;">
+                <div class="left-side" style="width: 500px; height:100%;">
+                    <div class= "ortakolon" style="width: 275px;
+                    height:0;
+                    background-color: rgb(173, 26, 26);
+                    margin-left: 40px;">
+                        <div class="circle"
+                            style="width: 200px; height: 200px; border:2px solid #000; border-radius: 100px; margin: 50px; justify-content: center;">
+                            <h4 style="position: absolute; margin-top: 50px; margin-left: 30px;">FOTOGRAF</h4>
+                        </div>
+                        <h4 style="margin-left: 15px;">İLETİŞİM</h4>
+                        <p style="width: 220px; border-bottom: 3px solid rgb(8, 8, 8); margin-left: 15px;"></p>
+                        <ul>
+                            <li id="phoneNumber2">{ Telefon }</li>
+                            <li id="mail2">{ Mail }</li>
+                            <li id="adress2">{ Adres }</li>
+                            <li id="web2">{ Web }</li>
+                        </ul>
+                        <div style="margin-top: 100px;">
+                            <h4 style="margin-left: 15px;">EĞİTİM</h4>
+                            <p style="width: 220px; border-bottom: 3px solid #000; margin-left: 15px;"></p>
+                            <p style="padding-left:15px ;" id="explain2">{ AÇIKLAMA }</p>
+                        </div>
+                        <div style="margin-top: 100px;">
+                            <h4 style="margin-left: 15px;">YETENEKLER</h4>
+                            <p style="width: 220px; border-bottom: 3px solid #000; margin-left: 15px;"></p>
+                            <p style="padding-left:15px ;" id="ytnkExplain2">{ AÇIKLAMA }</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right-side" style="width: 700px; height: 270px ;background-color: rgb(69, 65, 65);">
+                    <h1 style="color: white; text-align: center; padding-top: 70px;" id="fname">{ AD SOYAD }</h1>
+                    <p style=" width: 250px ;border-bottom: 3px solid rgb(245, 239, 239); margin-left: 150px;"></p>
+                    <h4 style="color: white; text-align: center;" id="title2">{ UNVAN }</h4>
+                    <div style="margin-top: 100px;">
+                        <p style="margin-left: 15px; padding-top: 20px; font-size: 19px;">{ HAKKIMDA }</p>
+                        <p style="width: 350px; border-bottom: 2.5px solid #000; margin-left: 15px;"></p>
+                        <p style="padding-left:15px ;" id="aboutExplain2">{ AÇIKLAMA }</p>
+                    </div>
+                    <div style="margin-top: 200px;">
+                        <p style="margin-left: 15px; padding-top: 20px; font-size: 19px;">{ İŞ DENEYİMİ }</p>
+                        <p style="width: 350px; border-bottom: 2.5px solid #000; margin-left: 15px;"></p>
+                        <p style="padding-left:15px ;" id="wrkExperience2">{ AÇIKLAMA }</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </form>
+    <script>
+        const fullname = document.getElementById("fullname");
+        const fname = document.getElementById("fname");
+
+        const unvan = document.getElementById("title");
+        const title2 = document.getElementById("title2");
+
+        const phoneNumber = document.getElementById("phoneNumber");
+        const phoneNumber2 = document.getElementById("phoneNumber2");
+
+        const mail = document.getElementById("mail");
+        const mail2 =  document.getElementById("mail2");
+
+        const web = document.getElementById("web");
+        const web2 = document.getElementById("web2");
+
+        const adress = document.getElementById("adress");
+        const adress2 = document.getElementById("adress2")
+
+        const explain = document.getElementById("explain");
+        const explain2 = document.getElementById("explain2");
+
+        const ytnkExplain = document.getElementById("ytnkExplain")
+        const ytnkExplain2 = document.getElementById("ytnkExplain2")
+
+        const aboutExplain = document.getElementById("aboutExplain");
+        const aboutExplain2 = document.getElementById("aboutExplain2");
+
+        const wrkExperience = document.getElementById("wrkExperience");
+        const wrkExperience2 = document.getElementById("wrkExperience2");
+
+        function changeNameHandler() {
+            const name = fullname.value;
+            fname.textContent = name;
+        }
+
+        function changeUnvanHandler() {
+            const title = unvan.value;
+            title2.textContent = title;
+        }
+
+        function changePhoneHandler() {
+            const telefonNumarasi = phoneNumber.value;
+            phoneNumber2.textContent = telefonNumarasi;
+        }
+        function changeMailHandler() {
+            const mailAdress = mail.value;
+            mail2.textContent = mailAdress;
+        }
+
+        function changeWebHandler() {
+            const webAdress = web.value;
+            web2.textContent = webAdress;
+        }
+
+        function changeAdressHandler(){
+            const myAdress = adress.value;
+            adress2.textContent = myAdress; 
+        }
+
+        function changeEgitimHandler(){
+            const aciklama = explain.value;
+            explain2.textContent = aciklama;
+        }
+
+        function changeYtnkHandler() {
+            const ytnkAciklama = ytnkExplain.value;
+            ytnkExplain2.textContent = ytnkAciklama;
+        }
+
+        function changeAboutHandler() {
+            const hakkimdaAciklama = aboutExplain.value;
+            aboutExplain2.textContent = hakkimdaAciklama;
+        }
+
+        function changeWrkHandler() {
+            const experience = wrkExperience.value;
+            wrkExperience2.textContent = experience;
+        }
+    </script>
+</body>
+
+</html>
